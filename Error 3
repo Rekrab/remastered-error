@@ -1,0 +1,43 @@
+build>> [775/1185] Building CXX object src/CMakeFiles/core3.dir/server/zone/managers/name/NameManager.cpp.o
+build>> [776/1185] Building CXX object src/CMakeFiles/core3.dir/server/zone/managers/objectcontroller/command/CommandConfigManager3.cpp.o
+build>> [777/1185] Building CXX object src/CMakeFiles/core3.dir/server/zone/managers/loot/LootManagerImplementation.cpp.o
+build>> [778/1185] Building CXX object src/CMakeFiles/core3.dir/server/zone/managers/planet/HeightMap.cpp.o
+build>> [779/1185] Building CXX object src/CMakeFiles/core3.dir/server/zone/managers/planet/MapLocationEntry.cpp.o
+build>> [780/1185] Building CXX object src/CMakeFiles/core3.dir/server/zone/managers/planet/MapLocationTable.cpp.o
+build>> [781/1185] Building CXX object src/CMakeFiles/core3.dir/server/zone/managers/player/BadgeList.cpp.o
+build>> [782/1185] Building CXX object src/CMakeFiles/core3.dir/server/zone/managers/player/LuaQuestInfo.cpp.o
+build>> [783/1185] Building CXX object src/CMakeFiles/core3.dir/server/zone/managers/player/PermissionLevelList.cpp.o
+build>> [784/1185] Building CXX object src/CMakeFiles/core3.dir/server/zone/managers/objectcontroller/ObjectControllerImplementation.cpp.o
+build>> [785/1185] Building CXX object src/CMakeFiles/core3.dir/server/zone/managers/objectcontroller/command/CommandConfigManager.cpp.o
+build>> [786/1185] Building CXX object src/CMakeFiles/core3.dir/server/zone/managers/objectcontroller/command/CommandConfigManager2.cpp.o
+build>> FAILED: src/CMakeFiles/core3.dir/server/zone/managers/objectcontroller/command/CommandConfigManager2.cpp.o
+build>> ccache /usr/bin/c++ -DCOMPILE_CORE3_TESTS -DDEFAULT_DYNAMIC_CAST -DODB_REFERENCES -I/usr/local/include -I/usr/include/mysql -I/home/vagrant/workspace/Core3/MMOEngine/include -I../../../utils/googletest-release-1.8.0/googletest/include -I../../../utils/googletest-release-1.8.0/googlemock/include -I../../../src -I../../../src/autogen -I../../../utils -I../../../src/. -Wall -Wextra -Wno-unused -Wno-sign-compare -Wno-multichar -Wno-unused-parameter -Wno-overloaded-virtual -Wno-missing-declarations -Werror -march=native -fno-omit-frame-pointer -g -pthread -std=gnu++11 -MD -MT src/CMakeFiles/core3.dir/server/zone/managers/objectcontroller/command/CommandConfigManager2.cpp.o -MF src/CMakeFiles/core3.dir/server/zone/managers/objectcontroller/command/CommandConfigManager2.cpp.o.d -o src/CMakeFiles/core3.dir/server/zone/managers/objectcontroller/command/CommandConfigManager2.cpp.o -c /home/vagrant/workspace/Core3/MMOCoreORB/src/server/zone/managers/objectcontroller/command/CommandConfigManager2.cpp
+build>> In file included from /home/vagrant/workspace/Core3/MMOEngine/include/engine/engine.h:16:0,
+build>> from /home/vagrant/workspace/Core3/MMOCoreORB/src/server/zone/managers/objectcontroller/command/CommandConfigManager.h:8,
+build>> from /home/vagrant/workspace/Core3/MMOCoreORB/src/server/zone/managers/objectcontroller/command/CommandConfigManager2.cpp:1:
+build>> /home/vagrant/workspace/Core3/MMOEngine/include/engine/core/ManagedReference.h: In instantiation of 'void engine::core::ManagedReference<O>::updateObject(O) [with O = server::zone::objects::tangible::components::droid::DroidDetonationModuleDataComponent*]':
+build>> /home/vagrant/workspace/Core3/MMOEngine/include/engine/core/ManagedReference.h:111:16: required from 'O engine::core::ManagedReference<O>::operator=(O) [with O = server::zone::objects::tangible::components::droid::DroidDetonationModuleDataComponent*]'
+build>> ../../../src/server/zone/objects/creature/events/DroidDetonationTask.h:32:18: required from here
+build>> /home/vagrant/workspace/Core3/MMOEngine/include/engine/core/ManagedReference.h:178:27: error: 'class server::zone::objects::tangible::components::droid::DroidDetonationModuleDataComponent' has no member named '_getObjectID'; did you mean 'getObjectData'?
+build>> loadedOID = obj ? obj->_getObjectID() : 0;
+build>> ~~~~~^~~~~~~~~~~~
+build>> [787/1185] Building CXX object src/CMakeFiles/core3.dir/server/zone/managers/radial/RadialManagerImplementation.cpp.o
+build>> [788/1185] Building CXX object src/CMakeFiles/core3.dir/server/zone/managers/objectcontroller/command/CommandConfigManager4.cpp.o
+build>> [789/1185] Building CXX object src/CMakeFiles/core3.dir/server/zone/managers/player/creation/PlayerCreationManager.cpp.o
+build>> FAILED: src/CMakeFiles/core3.dir/server/zone/managers/player/creation/PlayerCreationManager.cpp.o
+build>> ccache /usr/bin/c++ -DCOMPILE_CORE3_TESTS -DDEFAULT_DYNAMIC_CAST -DODB_REFERENCES -I/usr/local/include -I/usr/include/mysql -I/home/vagrant/workspace/Core3/MMOEngine/include -I../../../utils/googletest-release-1.8.0/googletest/include -I../../../utils/googletest-release-1.8.0/googlemock/include -I../../../src -I../../../src/autogen -I../../../utils -I../../../src/. -Wall -Wextra -Wno-unused -Wno-sign-compare -Wno-multichar -Wno-unused-parameter -Wno-overloaded-virtual -Wno-missing-declarations -Werror -march=native -fno-omit-frame-pointer -g -pthread -std=gnu++11 -MD -MT src/CMakeFiles/core3.dir/server/zone/managers/player/creation/PlayerCreationManager.cpp.o -MF src/CMakeFiles/core3.dir/server/zone/managers/player/creation/PlayerCreationManager.cpp.o.d -o src/CMakeFiles/core3.dir/server/zone/managers/player/creation/PlayerCreationManager.cpp.o -c /home/vagrant/workspace/Core3/MMOCoreORB/src/server/zone/managers/player/creation/PlayerCreationManager.cpp
+build>> /home/vagrant/workspace/Core3/MMOCoreORB/src/server/zone/managers/player/creation/PlayerCreationManager.cpp: In member function 'bool server::zone::managers::player::creation::PlayerCreationManager::createCharacter(ClientCreateCharacterCallback*) const':
+build>> /home/vagrant/workspace/Core3/MMOCoreORB/src/server/zone/managers/player/creation/PlayerCreationManager.cpp:604:34: error: 'class server::chat::ChatManager' has no member named 'getGeneralRoom'; did you mean 'getGameRoom'?
+build>> ghost->addChatRoom(chatManager->getGeneralRoom()->getRoomID());
+build>> ^~~~~~~~~~~~~~
+build>> [790/1185] Building CXX object src/CMakeFiles/core3.dir/server/zone/managers/player/PlayerManagerImplementation.cpp.o
+build>> ninja: build stopped: subcommand failed.
+build>> Makefile:137: recipe for target 'build-ninja-debug' failed
+build>> make: *** [build-ninja-debug] Error 1
+build>> ** BUILD FAILED **
+build>> 
+
+
+
+Replaced errored file with original from SWGEmu image (core3.dir/server/zone/managers/objectcontroller/command/CommandConfigManager2.cpp)
+Same error on build
