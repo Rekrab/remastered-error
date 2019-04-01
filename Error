@@ -1,0 +1,31 @@
+build>> [283/1185] Building IDL object src/server/zone/objects/waypoint/WaypointObject.idl
+build>> [284/1185] Building IDL object src/server/zone/objects/tangible/wearables/WearableContainerObject.idl
+build>> [285/1185] Building IDL object src/server/zone/objects/tangible/wearables/WearableObject.idl
+build>> [286/1185] Building CXX object src/client/CMakeFiles/core3client.dir/ClientCore.cpp.o
+build>> FAILED: src/client/CMakeFiles/core3client.dir/ClientCore.cpp.o
+build>> ccache /usr/bin/c++ -DCOMPILE_CORE3_TESTS -DDEFAULT_DYNAMIC_CAST -I/usr/local/include -I/usr/include/mysql -I/home/vagrant/workspace/Core3/MMOEngine/include -I../../../utils/googletest-release-1.8.0/googletest/include -I../../../utils/googletest-release-1.8.0/googlemock/include -I../../../src -I../../../src/autogen -I../../../utils -I../../../src/client/. -Wall -Wextra -Wno-unused -Wno-sign-compare -Wno-multichar -Wno-unused-parameter -Wno-overloaded-virtual -Wno-missing-declarations -Werror -march=native -fno-omit-frame-pointer -g -pthread -std=gnu++11 -MD -MT src/client/CMakeFiles/core3client.dir/ClientCore.cpp.o -MF src/client/CMakeFiles/core3client.dir/ClientCore.cpp.o.d -o src/client/CMakeFiles/core3client.dir/ClientCore.cpp.o -c /home/vagrant/workspace/Core3/MMOCoreORB/src/client/ClientCore.cpp
+build>> /home/vagrant/workspace/Core3/MMOCoreORB/src/client/ClientCore.cpp: In constructor 'ClientCore::ClientCore(int)':
+build>> /home/vagrant/workspace/Core3/MMOCoreORB/src/client/ClientCore.cpp:12:89: error: invalid conversion from 'const char*' to 'int' [-fpermissive]
+build>> ClientCore::ClientCore(int instances) : Core("log/core3client.log"), Logger("CoreClient") {
+build>> ^
+build>> In file included from /home/vagrant/workspace/Core3/MMOEngine/include/engine/engine.h:11:0,
+build>> from ../../../src/client/zone/objects/scene/SceneObject.h:4,
+build>> from ../../../src/client/zone/objects/tangible/TangibleObject.h:11,
+build>> from ../../../src/client/zone/objects/creature/CreatureObject.h:4,
+build>> from ../../../src/client/zone/objects/player/PlayerCreature.h:4,
+build>> from ../../../src/client/zone/ZoneClient.h:8,
+build>> from ../../../src/client/zone/Zone.h:8,
+build>> from /home/vagrant/workspace/Core3/MMOCoreORB/src/client/ClientCore.cpp:5:
+build>> /home/vagrant/workspace/Core3/MMOEngine/include/engine/core/Core.h:46:3: note: initializing argument 1 of 'engine::core::Core::Core(int)'
+build>> Core(int logLevel = Logger::INFO);
+build>> ^~~~
+build>> [287/1185] Building CXX object src/client/CMakeFiles/core3client.dir/login/LoginPacketHandler.cpp.o
+build>> [288/1185] Building CXX object src/client/CMakeFiles/core3client.dir/login/LoginSession.cpp.o
+build>> [289/1185] Building CXX object src/client/CMakeFiles/core3client.dir/login/LoginClient.cpp.o
+build>> [290/1185] Building CXX object src/CMakeFiles/idlobjects.dir/autogen/server/zone/managers/minigames/FishingSession.cpp.o
+build>> ninja: build stopped: subcommand failed.
+build>> Makefile:137: recipe for target 'build-ninja-debug' failed
+build>> make: *** [build-ninja-debug] Error 1
+build>> ** BUILD FAILED **
+build>>
+build>> 
